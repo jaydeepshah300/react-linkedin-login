@@ -8,7 +8,7 @@ import Alert from "react-s-alert";
 import ProfileCard from "./components/ProfileCard";
 import _ from "lodash";
 
-/*class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -102,9 +102,9 @@ import _ from "lodash";
   }
 }
 
-export default App;*/
+export default App;
 
-const App = () => {
+/*const App = () => {
   const [initialState, setInitialState] = useState({
     isAuthorized: false,
     firstName: null,
@@ -217,4 +217,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default App;*/
