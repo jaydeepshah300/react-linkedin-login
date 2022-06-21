@@ -7,8 +7,8 @@ require("dotenv").config();
 router.get("/", function (req, res, next) {
   requestAccessToken(req.query.code, req.query.state)
     .then((response) => {
-      requestProfile(response.body.access_token).then((response) => {
-        res.render("callback", { profile: response });
+      requestProfile(response.body.access_token).then((result) => {
+        res.render("callback", { profile: result });
       });
     })
     .catch((error) => {
