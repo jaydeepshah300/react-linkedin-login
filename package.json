@@ -1,23 +1,38 @@
 {
-  "name": "server",
-  "version": "0.0.0",
+  "name": "react-linkedin-login",
+  "version": "0.1.0",
   "private": true,
-  "scripts": {
-    "start": "node ./bin/www"
-  },
   "dependencies": {
-    "body-parser": "~1.18.2",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "dotenv": "^5.0.1",
-    "ejs": "~2.5.7",
-    "express": "^4.17.1",
-    "morgan": "~1.9.0",
-    "serve-favicon": "~2.4.5",
-    "superagent": "^3.8.2"
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.9",
+    "@fortawesome/fontawesome-free-solid": "^5.0.9",
+    "@fortawesome/react-fontawesome": "^0.0.18",
+    "lodash": "^4.17.21",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-s-alert": "^1.4.1",
+    "react-scripts": "^3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "engines": {
     "node": ">6.0.0",
     "yarn": ">1.4.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
