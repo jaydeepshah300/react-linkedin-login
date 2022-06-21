@@ -117,9 +117,9 @@ const App = () => {
   useEffect(() => {
     window.addEventListener("message", handlePostMessage);
 
-    return () => {
-      window.removeEventListener("message", handlePostMessage);
-    };
+    // return () => {
+    //   window.removeEventListener("message", handlePostMessage);
+    // };
   });
 
   // function for handle login message
