@@ -6,7 +6,11 @@
         },
         {
             "source": "/callback",
-            "destination": "callback"
-            }
-    ]
+            "destination": "/api"
+        }
+    ],
+    "route": [{
+        "src": "/(.*)",
+        "dest": "/"
+    }]
 }
