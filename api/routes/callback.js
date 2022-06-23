@@ -4,10 +4,13 @@ const request = require("superagent");
 require("dotenv").config();
 
 /* Handle LinkedIn OAuth callback and return user profile. */
-router.get("/", function (req, res, next) {
+
+exports.callback = (req, res) => {
   requestAccessToken(req.query.code, req.query.state)
     .then((response) => {
       requestProfile(response.body.access_token).then((result) => {
+        // res.render("callback", { profile: result });
+        // return res.json({ profile: result });
         res.render("callback", { profile: result });
       });
     })
@@ -15,7 +18,7 @@ router.get("/", function (req, res, next) {
       res.status(500).send(`${error}`);
       console.error(error);
     });
-});
+};
 
 function requestAccessToken(code, state) {
   return request
@@ -49,5 +52,3 @@ const requestProfile = async (token) => {
 
   return finalResponse;
 };
-
-module.exports = router;
