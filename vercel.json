@@ -8,9 +8,5 @@
             "source": "/callback",
             "destination": "/api"
         }
-    ],
-    "route": [{
-        "src": "/(.*)",
-        "dest": "/"
-    }]
+    ]
 }
